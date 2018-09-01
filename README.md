@@ -13,3 +13,5 @@ POJ，ZOJ这类面向ACM和NOI竞赛的Online Judge有很多，那为什么要�
 [53、最大子序和](https://leetcode-cn.com/problems/maximum-subarray/description/)
 
 [70、爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/description/)
+
+[136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/description/)
