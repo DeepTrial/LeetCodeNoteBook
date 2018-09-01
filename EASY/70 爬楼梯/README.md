@@ -30,3 +30,23 @@
 >1.  1 阶 + 1 阶 + 1 阶
 >2.  1 阶 + 2 阶
 >3.  2 阶 + 1 阶
+
+
+## 分析
+假设f(n)代表到达第n层的方法，f(n)可以分解为先到n-1层之后再上一层，或者是先到n-2层，再上2层楼。所以得到递推公式：
+
+f(n)=f(n-1)+f(n-2)
+
+这也是斐波那契数列的递推公式，由此这道题目的解法就很明显了：
+
+	class Solution {
+	public:
+    	int climbStairs(int n) {
+       		int count[1000]={0};
+        	count[1]=1;
+        	count[2]=2;
+        	for(int i=3;i<=n;i++)
+            	count[i]=count[i-1]+count[i-2];
+        	return count[n];
+    	}
+	};
